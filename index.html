@@ -4,12 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Belajar WebGL</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
+  <title>Tugas 4 Dio</title>
 </head>
 <body>
-  <canvas id="glcanvas" width="1520" height="480">
-    Browser Anda tidak mendukung HTML5 <code>&lt;canvas&gt;</code>.
-  </canvas>
+    <div class="scene">
+
+    <canvas id="glcanvas" width="1520" height="480"
+    >Browser anda tidak mendukung html5
+    </canvas>
+  
+    <p style="font-size:35px;">Kubus Terbuka, Huruf Bercahaya</p>
+    <p style="font-size:20px;">Press W-A-S-D to control using XY axis</p>
+    <p style="font-size:20px;">Press Q-E to control using Z axis</p>
+  </div>
 
   <!-- Shaders -->
   <script name="shader" data-src="vertex.glsl" data-type="vertex" data-version="v1"></script>
@@ -17,17 +26,14 @@
   <script name="shader" data-src="vertex2.glsl" data-type="vertex" data-version="v2"></script>
   <script name="shader" data-src="fragment2.glsl" data-type="fragment" data-version="v2"></script>
 
-  <h1>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Animasi Huruf dalam Kubus</h1>
-  <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Press X to rotate by x axis&emsp;&emsp;Press Y to rotate by y axis</h3>
-  <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Press Z to rotate by z axis</h3>
-  <h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Press S to stop rotation&emsp;&emsp;&emsp;Press C to continue rotation</h3>
-
   <!-- Library untuk men-dispatch methods -->
   <script type="text/javascript" src="libs/signals.js"></script>
+
   <script type="text/javascript" src="libs/gl-matrix-min.js"></script>
 
   <!-- JavaScript untuk menghubungkan ke WebGL -->
   <script type="text/javascript" src="libs/glUtils.js"></script>
+  <script type="text/javascript" src="libs/transformasi_geometri.js"></script>
 
   <!-- JavaScript utama kita -->
   <script type="text/javascript" src="index.js"></script>
